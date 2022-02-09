@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/modal-gc.css">
+  <title>Gepcode Modal</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      color: #4b4e5c;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="show-modal">modal open</button>
+  <div class="gc-modal" id="myModal">
+    <div class="gc-modal-content gc-modal-sm gc-modal-right">
+      <div class="gc-modal-header">
+        <h2>Modal Header</h2>
+        <button class="gc-modal-close">&times;</button>
+      </div>
+      <div class="gc-modal-body">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque. </span>
+      </div>
+      <div class="gc-modal-footer">
+        <button class="gc-btn gc-btn-primary">Save</button>
+        <button class="gc-btn gc-btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./src/modal-gc.js"></script>
+<script>
+  $(function (e) {
+    $(".show-modal").on("click", function (e) {
+      $("#myModal").gcModal("show")
+    })
+  })
+</script>
+
+</html>
