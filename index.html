@@ -19,16 +19,16 @@
 
 <body>
   <button class="show-modal">modal open</button>
-  <div class="gc-modal" id="myModal">
-    <div class="gc-modal-content gc-modal-sm gc-modal-right">
-      <div class="gc-modal-header">
+  <div class="modal-gc" id="myModal">
+    <div class="modal-gc-content modal-gc-sm modal-gc-right">
+      <div class="modal-gc-header">
         <h2>Modal Header</h2>
-        <button class="gc-modal-close">&times;</button>
+        <button class="modal-gc-close">&times;</button>
       </div>
-      <div class="gc-modal-body">
+      <div class="modal-gc-body">
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque. </span>
       </div>
-      <div class="gc-modal-footer">
+      <div class="modal-gc-footer">
         <button class="gc-btn gc-btn-primary">Save</button>
         <button class="gc-btn gc-btn-secondary">Close</button>
       </div>
@@ -41,7 +41,7 @@
 <script>
   $(function (e) {
     $(".show-modal").on("click", function (e) {
-      $("#myModal").gcModal("show")
+      $("#myModal").modalGC("show")
     })
   })
 </script>

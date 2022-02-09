@@ -1,4 +1,4 @@
-.gc-modal {
+.modal-gc {
   color: inherit;
   position: fixed;
   top: 0;
@@ -11,26 +11,26 @@
   display: none;
 }
 
-.gc-modal.show {
+.modal-gc.show {
   display: block;
 }
 
-.gc-modal .gc-modal-content {
+.modal-gc .modal-gc-content {
   background-color: rgba(255, 254, 254, 0.9);
   height: 100vh;
   backdrop-filter: blur(10px);
 }
 
-.gc-modal .gc-modal-content.gc-modal-sm {
+.modal-gc .modal-gc-content.modal-gc-sm {
   width: 350px;
   max-width: 100%;
 }
 
-.gc-modal .gc-modal-content.gc-modal-sm.gc-modal-right {
+.modal-gc .modal-gc-content.modal-gc-sm.modal-gc-right {
   margin-left: auto;
 }
 
-.gc-modal .gc-modal-content .gc-modal-header {
+.modal-gc .modal-gc-content .modal-gc-header {
   border-bottom: 1px solid #EDF2F9;
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@
   padding: 0px 1rem;
 }
 
-.gc-modal button.gc-modal-close {
+.modal-gc button.modal-gc-close {
   background-color: inherit;
   font-size: 30px;
   font-weight: 100;
@@ -49,20 +49,20 @@
   opacity: 0.5;
 }
 
-.gc-modal button.gc-modal-close:hover {
+.modal-gc button.modal-gc-close:hover {
   opacity: 1;
 }
 
-.gc-modal button.gc-modal-close:focus {
+.modal-gc button.modal-gc-close:focus {
   opacity: 1;
   outline: none;
 }
 
-.gc-modal .gc-modal-content .gc-modal-body {
+.modal-gc .modal-gc-content .modal-gc-body {
   padding: .75rem 1rem;
 }
 
-.gc-modal .gc-modal-content .gc-modal-footer {
+.modal-gc .modal-gc-content .modal-gc-footer {
   border-top: 1px solid #EDF2F9;
   padding: 0px 1rem;
 }
